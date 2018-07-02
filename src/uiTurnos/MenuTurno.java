@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 import javax.media.Player;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import ui.MenuPrincipal;
+import ui.MenuModulo1;
 import utils.Constants;
 
 /**
@@ -80,7 +80,7 @@ public class MenuTurno extends JFrame implements KeyListener{
     private void setActionRegresar(){
         bAtras.setOnMouseClicked((MouseEvent e) -> {
             secundaryStage = new Stage();
-            Scene scene = new Scene(new MenuPrincipal(secundaryStage).getRoot(), Constants.MENU_DEFAULT_WIDTH, Constants.MENU_DEFAULT_LENGTH);
+            Scene scene = new Scene(new MenuModulo1(secundaryStage).getRoot(), Constants.MENU_DEFAULT_WIDTH, Constants.MENU_DEFAULT_LENGTH);
             secundaryStage.setTitle("Generacion de turnos");
             secundaryStage.setResizable(false);
             secundaryStage.setScene(scene);
